@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.read_csv("minified.csv", sep=',')
+#print df.count()
+#print df.head(1).to_string()
+#df = df[df.a.notnull()]
+print pd.unique(df['PrimaryDiagnosisCode'].values.ravel())
+#print df.describe()
